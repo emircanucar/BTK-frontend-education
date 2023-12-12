@@ -2,26 +2,32 @@
 
 :root {
     --navbar-height: 70px;
-    --navbar-height-n: -70px
-    --bg-color: #1C1F35;
+    --navbar-height-n: -70px;
+    --bg-color: #1c1f35;
 }
 
-.p-7{
+.p-7 {
     padding: 7rem;
 }
 
 .bg-main-blue {
     background-color: #091242;
 }
+.bg-main-light {
+    background-color: #f4f4f4;
+}
 
+.bg-two-color {
+    background: linear-gradient(90deg, #091242 50%, #f4f4f4 50%);
+}
 
 .bg-main-blue.bg-opacity-25 {
-    background-color: rgba(9, 18, 67, 0.5)
+    background-color: rgba(9, 18, 67, 0.5);
 }
 
 .header-wrapper {
-    padding: 46px
-        /* 0 değeri girildiğinde px girilmez - validation hatası */
+    padding: 46px;
+    /* 0 değeri girildiğinde px girilmez - validation hatası */
 }
 
 .logo-wrapper {
@@ -34,7 +40,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #111C55;
+    background-color: #111c55;
     padding: 15px;
     border-radius: 50%;
     border: 1px solid #273270;
@@ -57,7 +63,6 @@
 
 .slider-wrapper {
     margin-top: var(--navbar-height-n);
-
 }
 
 .navbar {
@@ -68,13 +73,13 @@
     display: flex;
     gap: 10px;
     /* margin-right: 15px; */
-
 }
 
 .icon {
     background-repeat: no-repeat;
     background-position: center;
-    display: block;
+    background-size: contain;
+    display: inline-block;
     height: 20px;
     width: 20px;
     justify-content: center;
@@ -82,23 +87,26 @@
 }
 
 .icon.icon-instagram {
-
     background-image: url("../img/icon/Instagram.svg");
 }
 
 .icon.icon-facebook {
-
     background-image: url("../img/icon/facebook.svg");
 }
 
 .icon.icon-linkedin {
-
     background-image: url("../img/icon/linkedin.svg");
 }
 
 .icon.icon-twitter {
-
     background-image: url("../img/icon/twitter.svg");
+}
+
+.icon-star {
+    background-image: url("../img/icon/star.svg");
+}
+.icon-star.deactive {
+    background-image: url("../img/icon/star-gray.svg");
 }
 
 .quick-navbar-button {
@@ -120,7 +128,7 @@
 }
 
 .section-top-info {
-    background-color: #E8E8E8;
+    background-color: #e8e8e8;
     display: inline-block;
     padding: 8px 4px;
     position: relative;
@@ -134,7 +142,7 @@
     height: 100%;
     display: block;
     top: 0;
-    background: linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+    background: linear-gradient(94.06deg, #ffb629 -1.21%, #ffda56 58.66%, #ffd7a6 116.84%);
 }
 
 .feature-card {
@@ -148,7 +156,7 @@
 
 .feature-card-image img {
     height: 50px;
-    width: 76px
+    width: 76px;
 }
 
 .feature-card-info {
@@ -181,7 +189,6 @@
     border-top: 25px solid #ffffff;
     margin-top: 200px;
     margin-left: -50px;
-
 }
 
 .card-blog {
@@ -200,13 +207,12 @@
 }
 
 .card-blog-info {
-    color: #FFB629;
+    color: #ffb629;
 }
 
 .card-blog-title {
     color: #ffffff;
 }
-
 
 .transporting-main-wrapper {
     display: inline;
@@ -230,8 +236,7 @@
     justify-content: center;
     align-items: center;
 
-
-    background: linear-gradient(95deg, #FFB629 -1.19%, #FFDA56 57.78%, #FFD7A6 115.08%);
+    background: linear-gradient(95deg, #ffb629 -1.19%, #ffda56 57.78%, #ffd7a6 115.08%);
 }
 
 .morework-btn {
@@ -244,103 +249,96 @@
     color: #ffffff;
 }
 
-.btn {
+.btn-no-border {
     border: 0 none;
+    background-color: transparent;
 }
 
-.comments-wrapper {
-    padding: 80px
+.comments-button-prev {
+    background-image: url("../img/icon/left-arrow.svg");
+}
+.comments-button-next {
+    background-image: url("../img/icon/right-arrow.svg");
 }
 
-.comment-wrapper-one {
-    background-color: #F4F4F4;
-    padding: 70px;
-}
-
-.comment-wrapper-two {
-    background-color: #091242;
-    padding: 70px;
-}
-
-.user-wrapper {
-    justify-content: left;
-    align-items: center;
-}
-
-.user-name-wrapper {
-    flex-direction: column;
-}
-
-.user-comment {
-    color: #666C89;
-    text-align: justify;
-    font-size: 18px;
-}
-
-.text-on-white {
-    color: #666C89;
-    text-align: justify;
-    font-size: 18px;
-}
-
-.why-choose-left {
-    position: relative;
-    padding: 140px 0;
-    background-color: #091242;
-
-}
-
-.plane-feature {
-    position: absolute;
-    left: 300px;
-    top: 627px;
-}
-
-.plane-img {
-    margin-left: 120px;
-    width: 100%;
-}
-
-
-
-.why-choose-right {
-    background-color: #F4F4F4;
-    padding: 200px 260px 200px 160px;
-    background-image: url("../img/background/worldmap.png");
+.comments-button {
     background-repeat: no-repeat;
-    background-position: center center;
-
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    transition: all 200ms;
+}
+.comments-button.swiper-button-disabled {
+    opacity: 0.5;
 }
 
-.reasons {
-    align-items: center;
-    justify-content: left;
+.fly-img-wrapper {
+    position: relative;
+    width: 120%;
+    height: 100%;
 }
 
-.why-choose-reasons-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.fly-img-wrapper img {
+    object-fit: cover;
+}
+.fly-img-content {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.reasons span {
-    font-size: 20px;
+.fly-img-right {
+    padding: 3rem 3rem 3rem 6rem;
 }
 
-.reason-text {
-    font-size: 17px;
-    color: #666C89;
-    text-align: justify;
+.card-user-wrapper {
+    background-color: #666c89;
 }
 
-
-.card-user-wrapper{
- background-color: #666C89;
-}
-
-.card-user-info{
-    background-color:#1C1F35
+.card-user-info {
+    background-color: #1c1f35;
 }
 
 /* Bundan sonrası scss*/
 
+.blog-list {
+    .blog-image {
+        position: relative;
+
+        .blog-image-hover {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(10, 19, 66, 0.9);
+        }
+    }
+
+    .icon {
+        width: 51px;
+        height: 56px;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &.icon-date {
+            background-image: url("../img/icon/calendar.svg");
+        }
+    }
+
+    .info-month {
+        display: block;
+        width: 100%;
+    }
+}
+
+.bg-footer-image {
+    background-image: url("../img/news/news-3.jpg");
+    background-attachment: fixed;
+    width: 100px;
+    height: 25px;
+}
+
+footer {
+    .footer-top {
+    }
+}
