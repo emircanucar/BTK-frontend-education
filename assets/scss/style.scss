@@ -323,6 +323,51 @@
     }
 }
 
+.contact-form {
+    & input {
+        padding: 10px;
+        border: solid 1px #4e5683;
+        background-color: transparent;
+        color: #ffffff;
+
+        &::placeholder {
+            /* Fİrefox */
+            color: #ffffff;
+            opacity: 1;
+        }
+        &::-ms-input-placeholder {
+            /* Edge 12 -18 */
+            color: #ffffff;
+        }
+    }
+
+    & textarea {
+        padding: 10px;
+        width: 100%;
+        height: 120px;
+        border: solid 1px #4e5683;
+        background-color: transparent;
+        color: #ffffff;
+
+        &::placeholder {
+            /* Fİrefox */
+            color: #ffffff;
+            opacity: 1;
+        }
+        &::-ms-input-placeholder {
+            /* Edge 12 -18 */
+            color: #ffffff;
+        }
+    }
+
+    & .submit-btn-wrapper {
+        & button {
+            padding: 19px 34px;
+            background: linear-gradient(94.06deg, #ffb629 -1.21%, #ffda56 58.66%, #ffd7a6 116.84%);
+        }
+    }
+}
+
 .blog-list {
     .blog-image {
         position: relative;
