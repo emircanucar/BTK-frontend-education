@@ -531,43 +531,76 @@
         </div>
     </section>
 
+    <!-- Team Section -->
     <section>
-        <div>
-            <div class="team-wrapper my-5">
-                <div class="d-flex team-header justify-content-center">
-                    <div class="section-top-info mb-3">
-                        The Transporters
-                    </div>
-                    <span class="fw-bolder fs-4">
-                        Meet Expert Team
-                    </span>
+        <div class="container my-5">
+            <div class="text-center">
+                <div class="section-top-info mb-3">
+                    The Transporters
+                </div>
+                <div class="section-heading mb-3">
+                    <span class="fs-2 lh-sm fw-bolder">Meet Expert Team</span>
                 </div>
             </div>
-
             <div class="w-100">
                 <div class="swiper slider--team">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="card-user-wrapper">
-                                <img src="assets/img/team/user1.svg" alt="">
-                                <div class="card-user-info">
-                                    <div class="d-flex justify-content-end">
-                                        <div class="user-social-media d-flex gap-3">
-                                            <a href="#">
-                                                <i class="icon icon-instagram"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="icon icon-facebook"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="icon icon-twitter"></i>
-                                            </a>
-                                        </div>
+                            <div class="team-mate-wrapper">
+                                <div class="team-mate-img">
+                                    <img src="assets/img/team/team1.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="team-mate-content position-relative d-flex flex-column bg-main-blue">
+                                    <div class="team-mate-social align-self-end d-flex gap-3 p-3">
+                                        <i class="icon icon-twitter"></i>
+                                        <i class="icon icon-facebook"></i>
+                                        <i class="icon icon-instagram"></i>
                                     </div>
-                                    <div class="card-user-info-desc text-white">
-                                        <span class="d-block"> Jessca Arow</span>
+                                    <div class="team-mate-info p-4 d-flex flex-column text-white">
+                                        <span class="fw-bolder fs-5">Jessca Arow</span>
                                         <span>Designer</span>
                                     </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-mate-wrapper">
+                                <div class="team-mate-img">
+                                    <img src="assets/img/team/team2.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="team-mate-content position-relative d-flex flex-column bg-main-blue">
+                                    <div class="team-mate-social align-self-end d-flex gap-3 p-3">
+                                        <i class="icon icon-twitter"></i>
+                                        <i class="icon icon-facebook"></i>
+                                        <i class="icon icon-instagram"></i>
+                                    </div>
+                                    <div class="team-mate-info p-4 d-flex flex-column text-white">
+                                        <span class="fw-bolder fs-5">Kathleen Smith</span>
+                                        <span>Back-end Developer</span>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-mate-wrapper">
+                                <div class="team-mate-img">
+                                    <img src="assets/img/team/team3.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="team-mate-content position-relative d-flex flex-column bg-main-blue">
+                                    <div class="team-mate-social align-self-end d-flex gap-3 p-3">
+                                        <i class="icon icon-twitter"></i>
+                                        <i class="icon icon-facebook"></i>
+                                        <i class="icon icon-instagram"></i>
+                                    </div>
+                                    <div class="team-mate-info p-4 d-flex flex-column text-white">
+                                        <span class="fw-bolder fs-5">Jessca Arow</span>
+                                        <span>Front-end Developer</span>
+                                    </div>
+
 
                                 </div>
                             </div>
@@ -575,6 +608,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -753,7 +787,7 @@
     <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
 
     <script>
-        var swiper = new Swiper(".slider--blog", {
+        var swiperBlog = new Swiper(".slider--blog", {
             slidesPerView: 5,
             spaceBetween: 30,
             freeMode: true,
@@ -764,7 +798,7 @@
         });
 
 
-        var swiper2 = new Swiper(".slider--customer", {
+        var swiperCustomer = new Swiper(".slider--customer", {
             slidesPerView: 1,
             spaceBetween: 0,
             freeMode: true,
@@ -784,7 +818,20 @@
 
         });
 
-
+        var swiperBlog = new Swiper(".slider--team", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3
+                }
+            }
+        });
     </script>
 
 </body>

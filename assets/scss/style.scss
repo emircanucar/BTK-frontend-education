@@ -302,6 +302,27 @@
 
 /* Bundan sonrası scss*/
 
+.team-mate-wrapper {
+    position: relative;
+    background-color: #b2b1b1;
+
+    // & img {
+    //     background-size: cover;
+    //     height: 426px;
+    //     width: 364px;
+    // }
+
+    & .team-mate-social {
+        position: absolute;
+        margin-top: -25px;
+        background: linear-gradient(94.06deg, #ffb629 -1.21%, #ffda56 58.66%, #ffd7a6 116.84%);
+
+        & i {
+            filter: brightness(0) saturate(100%);
+        }
+    }
+}
+
 .blog-list {
     .blog-image {
         position: relative;
