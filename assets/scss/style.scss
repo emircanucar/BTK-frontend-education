@@ -1,9 +1,15 @@
-/* ID ye style yazmayız */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
 
+/* ID ye style yazmayız */
 :root {
     --navbar-height: 70px;
     --navbar-height-n: -70px;
     --bg-color: #1c1f35;
+}
+
+body,
+html {
+    // font-family: "Rubik", system-ui, Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -11,6 +17,10 @@ a {
 }
 .p-7 {
     padding: 7rem;
+}
+
+.mt-6 {
+    margin-top: 5rem;
 }
 
 .bg-main-blue {
@@ -66,10 +76,90 @@ a {
 
 .slider-wrapper {
     margin-top: var(--navbar-height-n);
+    width: 100%;
+    height: 600px;
+    display: flex;
+
+    @media only screen and (min-width: 1200px) {
+        height: 800px;
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .main-slider {
+        height: 100%;
+        width: 100%;
+        display: relative;
+
+        &-img {
+            &::after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                inset: 0;
+
+                background-color: rgba(7, 20, 94, 0.393);
+            }
+        }
+
+        .section-top-info {
+            position: relative;
+            z-index: 2;
+            background-color: transparent !important;
+            color: #ffffff;
+            font-size: 12px;
+        }
+
+        &-content {
+            padding: 15px;
+            width: 100%;
+            max-width: 400px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 10px;
+
+            @media (min-width: 768px) {
+                width: 50%;
+            }
+            // @media only screen and (max-width: 768px) {
+            //     top: 50%;
+            //     transform: translateY(-50%);
+            //     left: 50%;
+            //     transform: translateX(-50%);
+            // }
+            &-header {
+                color: #ffffff;
+                font-size: 32px;
+                font-weight: bolder;
+            }
+
+            p {
+                color: #ffffff;
+                font-size: 12px;
+            }
+
+            a {
+                color: #000000;
+                padding: 15px 30px;
+                display: inline-block;
+                margin-top: 5px;
+                background: linear-gradient(94.06deg, #ffb629 -1.21%, #ffda56 58.66%, #ffd7a6 116.84%);
+            }
+        }
+    }
 }
 
 .navbar {
     height: var(--navbar-height);
+    position: sticky;
+    top: 0;
 }
 
 .navbar-social-media {
@@ -182,20 +272,28 @@ a {
 .global-logistics-wrapper {
     background-color: #ffffff;
     position: relative;
-    padding: 70px;
-}
+    &-images {
+        position: relative;
+    }
 
-.global-logistics-wrapper .image-two {
-    display: block;
-    position: absolute;
-    border-right: 25px solid #ffffff;
-    border-top: 25px solid #ffffff;
-    margin-top: 200px;
-    margin-left: -50px;
+    .image-one {
+        width: 100%;
+    }
+    .image-two {
+        display: block;
+        position: absolute;
+        border-right: 25px solid #ffffff;
+        border-top: 25px solid #ffffff;
+        inset: 0;
+        top: 70%;
+        left: -10%;
+    }
 }
 
 .card-blog {
     position: relative;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .card-blog-content {
@@ -204,8 +302,8 @@ a {
     left: 0;
     position: absolute;
     width: 100%;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 84%);
+    background: rgb(9, 18, 66);
+    background: linear-gradient(0deg, rgba(9, 18, 66, 1) 20%, rgba(255, 255, 255, 0) 100%);
     padding: 20px;
 }
 
@@ -217,39 +315,26 @@ a {
     color: #ffffff;
 }
 
-.transporting-main-wrapper {
-    display: inline;
-}
-
-.transporting-wrapper {
-    display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    margin-top: -300px;
-}
-
 .transporting-bg {
-    display: flex;
-
+    position: absolute;
     width: 100%;
-    height: 400px;
-    margin-top: 300px;
-    justify-content: center;
-    align-items: center;
-
     background: linear-gradient(95deg, #ffb629 -1.19%, #ffda56 57.78%, #ffd7a6 115.08%);
+    height: 100%;
+
+    @media only screen and (min-width: 1200px) {
+        top: 180px;
+        height: 300px;
+    }
+    @media only screen and (min-width: 1400px) {
+        top: 160px;
+        height: 400px;
+    }
 }
 
-.morework-btn {
-    display: inline-block;
-    background-color: #091242;
-    padding: 19px 56px;
-    margin: 60px auto 0 auto;
-    text-align: center;
-    text-decoration: none;
+.quick-morework-btn {
+    padding: 20px 56px;
     color: #ffffff;
+    background-color: #091242;
 }
 
 .btn-no-border {
@@ -525,6 +610,84 @@ a {
                     color: #666c89;
                 }
             }
+        }
+    }
+}
+
+.header-sc-wrapper {
+    position: relative;
+    .header-bg {
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: var(--navbar-height-n);
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90.22deg, #032d5f 22.06%, rgba(9, 18, 66, 0.2) 51.49%);
+        }
+    }
+
+    .bg-plane {
+        background-image: url("../img/header/plane.jpg");
+    }
+
+    .header-content {
+        position: relative;
+        z-index: 2;
+
+        .section-top-info {
+            font-size: 12px;
+            background-color: #091242;
+            color: #ffffff;
+        }
+    }
+}
+
+.img-gallery {
+    &-image-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            &::after {
+                content: "";
+                position: absolute;
+                z-index: 2;
+                background-color: rgba(9, 18, 66, 0.829);
+                background-image: url("../img/icon/link.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                left: 5%;
+                top: 5%;
+                width: 90%;
+                height: 90%;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 200ms;
+            }
+            &:hover::after {
+                opacity: 100%;
+                visibility: visible;
+            }
+        }
+
+        .img-gallery-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }

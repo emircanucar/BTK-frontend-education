@@ -14,6 +14,7 @@
 
 <body>
 
+    <!-- Header -->
     <header>
         <div class="bg-main-blue">
             <div class="header-wrapper">
@@ -70,7 +71,8 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg p-0 bg-main-blue bg-opacity-25" data-bs-theme="dark">
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg z-2 p-0 bg-main-blue bg-opacity-25" data-bs-theme="dark">
         <div class="container h-100">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -115,14 +117,82 @@
         </div>
     </nav>
 
-    <section class="slider-wrapper">
-        <img src="assets/img/slider/slider-1.png" class="w-100 h-100" alt="">
+    <!-- Main Slider -->
+    <section>
+        <div class="slider-wrapper z-n1">
+            <!-- <img src="assets/img/slider/slider-1.png" class="w-100 h-100" alt=""> -->
+            <div class="swiper slider--main">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main-slider">
+                            <div class="main-slider-img w-100 h-100">
+                                <img loading="lazy" src="assets/img/slider/slider-1.jpg" alt="">
+                            </div>
+
+                            <div class="container">
+                                <div class="main-slider-content">
+                                    <div class="section-top-info mb-3">
+                                        Logistics & Supply Chain Solutions
+                                    </div>
+                                    <div class="main-slider-content-header">
+                                        Your Gateway
+                                        to any Destination in the World
+                                    </div>
+                                    <p>In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus finibus, enim diam interdum nulla, sed laoreet risus lectus. </p>
+                                    <a href="#">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-slider">
+                            <img loading="lazy" src="assets/img/slider/slider-2.jpg" alt="">
+                            <div class="container">
+                                <div class="main-slider-content d-none d-sm-block">
+                                    <div class="section-top-info mb-3">
+                                        Logistics & Supply Chain Solutions
+                                    </div>
+                                    <div class="main-slider-content-header">
+                                        Your Gateway
+                                        to any Destination in the World
+                                    </div>
+                                    <p>In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus finibus, enim diam interdum nulla, sed laoreet risus lectus. </p>
+                                    <a href="#">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-slider">
+                            <img loading="lazy" src="assets/img/slider/slider-3.jpg" alt="">
+                            <div class="container">
+                                <div class="main-slider-content d-none d-sm-block">
+                                    <div class="section-top-info mb-3">
+                                        Logistics & Supply Chain Solutions
+                                    </div>
+                                    <div class="main-slider-content-header">
+                                        Your Gateway
+                                        to any Destination in the World
+                                    </div>
+                                    <p>In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus finibus, enim diam interdum nulla, sed laoreet risus lectus. </p>
+                                    <a href="#">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
     </section>
 
     <section class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-lg-3 my-5 my-lg-0">
                     <div class="section-top-info">
                         What We do
                     </div>
@@ -132,9 +202,9 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-9">
+                <div class="col-12 col-lg-9">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <div class="feature-card">
                                 <div class="feature-card-image">
                                     <img src="assets/img/features/icon1.svg" alt="">
@@ -147,7 +217,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <div class="feature-card">
                                 <div class="feature-card-image">
                                     <img src="assets/img/features/icon2.svg" alt="">
@@ -160,7 +230,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <div class="feature-card">
                                 <div class="feature-card-image">
                                     <img src="assets/img/features/icon3.svg" alt="">
@@ -173,7 +243,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <div class="feature-card">
                                 <div class="feature-card-image">
                                     <img src="assets/img/features/icon4.svg" alt="">
@@ -198,9 +268,9 @@
         </div>
 
         <div class="container">
-            <div class="global-logistics-wrapper">
-                <div class="row justify-content-between">
-                    <div class="col-6">
+            <div class="global-logistics-wrapper p-2 p-md-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-6 order-2 order-lg-1 mt-5 m-lg-0 p-0 py-md-5 py-lg-0">
                         <div class="section-top-info mb-3">
                             Why Us
                         </div>
@@ -236,9 +306,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-5 ">
-                        <img src="assets/img/section/fly.png" class="position-absolute" alt="">
-                        <img src="assets/img/section/cargo.png" class="image-two" alt="">
+                    <div class="col-12 col-lg-6 px-lg-3 position-relative order-1 order-lg-2">
+                        <div class="global-logistics-wrapper-images position-relative">
+                            <img src="assets/img/section/fly.png" class="image-one" alt="">
+                            <img src="assets/img/section/cargo.png" class="image-two d-none d-md-block" alt="">
+                        </div>
 
                     </div>
                 </div>
@@ -247,9 +319,9 @@
     </section>
 
     <section>
-        <div class="container">
+        <div class="container mt-0 mt-lg-5">
             <div class="row g-0">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="d-flex gap-3 p-4 align-items-center border-top border-bottom border-end justify-content-center">
                         <span class="fs-2 fw-bolder">
                             1294
@@ -258,7 +330,7 @@
                         <span>Delivered Packages</span>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="d-flex gap-3 p-4 align-items-center border-top border-bottom justify-content-center">
                         <span class="fs-2 fw-bolder">
                             3594
@@ -271,83 +343,92 @@
         </div>
     </section>
 
-    <section>
-        <div class="transporting-main-wrapper">
-            <div class="container transporting-wrapper">
-                <span class="text-center d-block mt-5 my-4 fs-4 fw-bolder"> Transporting Across The World</span>
-                <div class="swiper slider--blog">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card-blog">
-                                <div class="card-blog-image">
-                                    <img src="assets/img/blog/1.jpg" class="card-img" alt="...">
+    <section class="position-relative">
+        <div class="transporting-bg">
+        </div>
+        <div class="container position-relative my-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="transporting-wrapper">
+                        <span class="text-center d-block my-4 fs-4 fw-bolder"> Transporting Across The World</span>
+                        <div class="swiper slider--blog">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card-blog">
+                                        <div class="card-blog-image">
+                                            <img src="assets/img/blog/1.jpg" class="card-img" alt="...">
+                                        </div>
+                                        <div class="card-blog-content">
+                                            <span class="card-blog-title d-block fs-6">Packaging Solutions</span>
+                                            <span class="card-blog-info">Warehouse Management</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-blog-content">
-                                    <span class="card-blog-title d-block fs-6">Packaging Solutions</span>
-                                    <span class="card-blog-info">Warehouse Management</span>
+                                <div class="swiper-slide">
+                                    <div class="card-blog">
+                                        <div class="card-blog-image">
+                                            <img src="assets/img/blog/2.jpg" class="card-img" alt="...">
+                                        </div>
+                                        <div class="card-blog-content">
+                                            <span class="card-blog-title d-block fs-6">Liquid Transportation</span>
+                                            <span class="card-blog-info">Premium Tankers.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-blog">
+                                        <div class="card-blog-image">
+                                            <img src="assets/img/blog/3.jpg" class="card-img" alt="...">
+                                        </div>
+                                        <div class="card-blog-content">
+                                            <span class="card-blog-title d-block fs-6">Contract Logistics</span>
+                                            <span class="card-blog-info">Road Transportation</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-blog">
+                                        <div class="card-blog-image">
+                                            <img src="assets/img/blog/4.jpg" class="card-img" alt="...">
+                                        </div>
+                                        <div class="card-blog-content">
+                                            <span class="card-blog-title d-block fs-6">Specialized Transport</span>
+                                            <span class="card-blog-info">Ocean Transports</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-blog">
+                                        <div class="card-blog-image">
+                                            <img src="assets/img/blog/5.jpg" class="card-img" alt="...">
+                                        </div>
+                                        <div class="card-blog-content">
+                                            <span class="card-blog-title d-block fs-6">Liquid Transportation</span>
+                                            <span class="card-blog-info">Premium Tankers.</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="card-blog">
-                                <div class="card-blog-image">
-                                    <img src="assets/img/blog/2.jpg" class="card-img" alt="...">
-                                </div>
-                                <div class="card-blog-content">
-                                    <span class="card-blog-title d-block fs-6">Liquid Transportation</span>
-                                    <span class="card-blog-info">Premium Tankers.</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card-blog">
-                                <div class="card-blog-image">
-                                    <img src="assets/img/blog/3.jpg" class="card-img" alt="...">
-                                </div>
-                                <div class="card-blog-content">
-                                    <span class="card-blog-title d-block fs-6">Contract Logistics</span>
-                                    <span class="card-blog-info">Road Transportation</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card-blog">
-                                <div class="card-blog-image">
-                                    <img src="assets/img/blog/4.jpg" class="card-img" alt="...">
-                                </div>
-                                <div class="card-blog-content">
-                                    <span class="card-blog-title d-block fs-6">Specialized Transport</span>
-                                    <span class="card-blog-info">Ocean Transports</span>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
 
-                        <div class="swiper-slide">
-                            <div class="card-blog">
-                                <div class="card-blog-image">
-                                    <img src="assets/img/blog/5.jpg" class="card-img" alt="...">
-                                </div>
-                                <div class="card-blog-content">
-                                    <span class="card-blog-title d-block fs-6">Liquid Transportation</span>
-                                    <span class="card-blog-info">Premium Tankers.</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-
+                <div class="col-12 p-5">
+                    <div class="text-center">
+                        <a href="#" class="quick-morework-btn">More Work</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid transporting-bg">
-            <a class="morework-btn">More Work</a>
-        </div>
-        </div>
+
+
+
+
     </section>
 
+    <!-- Customer Comments -->
     <section>
-        <div class="comments-wrapper p-3 p-md-5">
+        <div class="comments-wrapper p-2 p-lg-5 my-5 m-md-0">
             <div class="container">
                 <div class="section-top-info px-3 mb-3">
                     Testimonial
@@ -359,7 +440,7 @@
                         </span>
                     </div>
                     <div class="col-6">
-                        <div class="d-flex justify-content-end gap-2">
+                        <div class="d-none d-lg-flex justify-content-end gap-2">
                             <button class="btn-no-border comments-button comments-button-prev"></button>
                             <button class="btn-no-border comments-button comments-button-next"></button>
                         </div>
@@ -371,7 +452,6 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="card-customer p-2 p-md-5 bg-main-light">
-
                                     <div class="card-customer-header d-flex justify-content-between">
                                         <div class="d-flex">
                                             <img src="assets/img/comments/User1.svg" alt="">
@@ -685,7 +765,7 @@
                                 <textarea name="" id="" placeholder="Your Message"></textarea>
                             </div>
                             <div class="col-12 mt-4">
-                                <div class="submit-btn-wrapper text-white">
+                                <div class="submit-btn-wrapper text-white d-flex d-md-block justify-content-center">
                                     <button type="submit"> Submit Message</button>
                                 </div>
                             </div>
@@ -754,7 +834,7 @@
                         <article>
                             <a href="#">
                                 <div class="row">
-                                    <div class="col-5">
+                                    <div class="col-12 col-sm-12 col-md-5 mb-4">
                                         <div class="blog-image">
                                             <img src="assets/img/news/news-bg.svg" data-src="assets/img/news/news-1.jpg" class="lazyload w-100" alt="">
                                             <div class="blog-image-hover">
@@ -763,7 +843,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-1">
+                                    <div class="col-12 col-sm-2 col-md-1">
                                         <div class="d-flex flex-column align-items-center">
                                             <i class="icon icon-date"></i>
                                             <time class="text-dark">
@@ -773,7 +853,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-6 border-start">
+                                    <div class="col-12 col-sm-10 col-md-6 border-start">
                                         <div class="blog-title fs-3">
                                             Inland freight a worthy solution for your business
                                         </div>
@@ -795,8 +875,8 @@
                         </article>
                         <article>
                             <a href="#">
-                                <div class="row">
-                                    <div class="col-5">
+                                <div class="row border-top pt-4">
+                                    <div class="col-12 col-sm-12 col-md-5 mb-4">
                                         <div class="blog-image">
                                             <img src="assets/img/news/news-bg.svg" data-src="assets/img/news/news-2.jpg" class="lazyload w-100" alt="">
                                             <div class="blog-image-hover">
@@ -805,7 +885,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-1">
+                                    <div class="col-12 col-sm-2 col-md-1">
                                         <div class="d-flex flex-column align-items-center">
                                             <i class="icon icon-date"></i>
                                             <time class="text-dark">
@@ -815,7 +895,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-6 border-start">
+                                    <div class="col-12 col-sm-10 col-md-6 border-start">
                                         <div class="blog-title fs-3">
                                             How technology can help redraw the supply chain map </div>
                                         <div class="blog-desc fs-6 mt-3">
@@ -836,8 +916,8 @@
                         </article>
                         <article>
                             <a href="#">
-                                <div class="row">
-                                    <div class="col-5">
+                                <div class="row border-top pt-4">
+                                    <div class="col-12 col-sm-12 col-md-5 mb-4">
                                         <div class="blog-image">
                                             <img src="assets/img/news/news-bg.svg" data-src="assets/img/news/news-3.jpg" class="lazyload w-100" alt="">
                                             <div class="blog-image-hover">
@@ -846,7 +926,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-1">
+                                    <div class="col-12 col-sm-2 col-md-1">
                                         <div class="d-flex flex-column align-items-center">
                                             <i class="icon icon-date"></i>
                                             <time class="text-dark">
@@ -856,7 +936,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-6 border-start">
+                                    <div class="col-12 col-sm-10 col-md-6 border-start">
                                         <div class="blog-title fs-3">
                                             Five things you should have ready for your broker </div>
                                         <div class="blog-desc fs-6 mt-3">
@@ -898,31 +978,31 @@
 
     <footer>
         <div class="footer">
-            <div class="footer-top fs-4 fw-bolder">
+            <div class="footer-top fw-bolder">
                 <div class="container">
                     <div class="row">
-                        <div class="col-4 bg-main-blue">
-                            <div class="footer-logo d-flex align-items-center ps-2 py-5 h-100">
+                        <div class="col -12 col-lg-4 bg-main-blue">
+                            <div class="footer-logo d-flex align-items-center justify-content-center ps-2 py-5 h-100">
                                 <img src="assets/img/logo.svg" alt="">
                             </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-lg-2 d-none d-lg-flex">
                             <a href="" class="footer-title">Pages</a>
                         </div>
-                        <div class="col-2">
+                        <div class="col-lg-2 d-none d-lg-flex">
                             <a href="" class="footer-title">Utility</a>
 
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 d-none d-lg-flex">
                             <a href="" class="footer-title">Subscribe</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-center bg-main-blue p-4 fs-5">
+            <div class="footer-center bg-main-blue p-4">
                 <div class="container py-3">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 mb-4 mb-md-0">
                             <div class="container text-white">
                                 <div class="row mt-3">
                                     <p class="">
@@ -953,7 +1033,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-2 ">
+                        <div class="col-6 col-lg-2 d-none d-md-block ">
                             <div class="footer-center-menu">
                                 <ul>
                                     <li><a href="#">About Us</a></li>
@@ -964,7 +1044,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-6 col-lg-2 d-none d-md-block">
                             <div class="footer-center-menu">
                                 <ul>
                                     <li><a href="#">Style Guide</a></li>
@@ -975,7 +1055,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4">
                             <form action="" class="footer-center-form">
                                 <input type="email" name="" id="" class="w-100" placeholder="Email here*" required>
                                 <div class="d-flex mt-3 align-items-center justify-content-between">
@@ -993,14 +1073,20 @@
                 </div>
             </div>
             <div class="footer-bottom bg-main-blue border-top border-secondary">
-                <div class="container d-flex text-white py-4 fs-5 justify-content-between ">
-                    <span>Copyright &copy; TransitFlow | Designed by VictorFlow - Powered by Webflow.</span>
-                    <span class="footer-bottom-link d-flex gap-3 text-white">
-                        <a href="#">Style Guide</a>
-                        <a href="#">Licenses</a>
-                        <a href="#">Changelog</a>
-                        <a href="#">Password</a>
-                    </span>
+                <div class="container  text-white py-4 ">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="d-flex text-white justify-content-center justify-content-lg-start">Copyright &copy; TransitFlow | Designed by VictorFlow</div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <span class="footer-bottom-link d-flex gap-3 text-white justify-content-center justify-content-lg-end">
+                                <a href="#">Style Guide</a>
+                                <a href="#">Licenses</a>
+                                <a href="#">Changelog</a>
+                                <a href="#">Password</a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1009,67 +1095,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
-
-    <script>
-        var swiperBlog = new Swiper(".slider--blog", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            freeMode: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 3
-                },
-
-                900: {
-                    slidesPerView: 4
-                },
-                1024: {
-                    slidesPerView: 5
-                },
-
-            }
-        });
+    <script src="assets/js/home.js"></script>
 
 
-        var swiperCustomer = new Swiper(".slider--customer", {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            freeMode: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".comments-button-next",
-                prevEl: ".comments-button-prev",
-            },
-            breakpoints: {
-                900: {
-                    slidesPerView: 2
-                }
-            }
-
-        });
-
-        var swiperBlog = new Swiper(".slider--team", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            freeMode: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 3
-                }
-            }
-        });
-    </script>
 
 </body>
 
