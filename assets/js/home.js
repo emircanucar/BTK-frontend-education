@@ -75,5 +75,36 @@ var swiperBlog = new Swiper(".slider--team", {
 });
 
 Fancybox.bind("[data-fancybox]", {
-    // Your custom options
+    // Your custom option
+
+
+    Carousel: {
+        infinite: true,
+    },
+    /*
+      Fullscreen: {
+          autoStart: true,
+      },
+    */
+
+});
+
+const container = document.getElementById("myPanzoom");
+
+const instance = new Panzoom(container, {
+    panMode: 'mousemove',
+    mouseMoveFactor: 1.25,
+    click: false,
+    wheel: false,
+
+});
+
+container.addEventListener("mouseenter", (event) => {
+    if (!event.buttons) {
+        instance.zoomTo(2);
+    }
+});
+
+container.addEventListener("mouseleave", () => {
+    instance.zoomToFit();
 });

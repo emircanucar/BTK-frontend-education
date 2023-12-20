@@ -22,6 +22,9 @@ a {
 .mt-6 {
     margin-top: 5rem;
 }
+.gray-text {
+    color: rgb(102, 108, 137);
+}
 
 .bg-main-blue {
     background-color: #091242;
@@ -645,7 +648,7 @@ a {
 
     .header-content {
         position: relative;
-        z-index: 2;
+        z-index: 1;
 
         .section-top-info {
             font-size: 12px;
@@ -693,4 +696,92 @@ a {
             object-fit: cover;
         }
     }
+}
+
+.video-section {
+    .thumbnail-wrapper {
+        position: relative;
+        overflow: hidden;
+
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .thumbnail-img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .thumbnail-play {
+            &-btn {
+                content: "";
+                position: absolute;
+                z-index: 2;
+                background-color: rgba(255, 255, 255);
+                background-image: url("../img/icon/play.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                border: #ffffff solid 1px;
+                border-radius: 999px;
+                height: 80px;
+                width: 80px;
+                overflow: hidden;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 50%;
+                transition: all 200ms;
+            }
+            &-effect {
+                content: "";
+                position: absolute;
+                z-index: 1;
+                background-color: rgba(255, 255, 255, 0.3);
+                border: #ffffff solid 1px;
+                border-radius: 999px;
+                width: 120px;
+                height: 120px;
+                overflow: hidden;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 50%;
+                transition: all 600ms;
+            }
+            &:hover .thumbnail-play-effect {
+                width: 1000px;
+                height: 1000px;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+.arrow-list {
+    ul {
+        padding-left: 20px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    li {
+        list-style-image: url("../img/icon/arrow.svg");
+    }
+}
+
+.project-details {
+    .project-details-content-info {
+        font-size: 20px;
+        .subject {
+            display: inline-block;
+            width: 100px;
+            font-weight: 600;
+        }
+    }
+}
+
+.f-panzoom {
+    background-color: transparent;
 }
