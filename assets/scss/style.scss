@@ -15,6 +15,7 @@ html {
 a {
     text-decoration: none;
 }
+
 .p-7 {
     padding: 7rem;
 }
@@ -22,13 +23,16 @@ a {
 .mt-6 {
     margin-top: 5rem;
 }
+
 .gray-text {
     color: rgb(102, 108, 137);
+    text-align: justify;
 }
 
 .bg-main-blue {
     background-color: #091242;
 }
+
 .bg-main-light {
     background-color: #f4f4f4;
 }
@@ -131,6 +135,7 @@ a {
             @media (min-width: 768px) {
                 width: 50%;
             }
+
             // @media only screen and (max-width: 768px) {
             //     top: 50%;
             //     transform: translateY(-50%);
@@ -163,6 +168,20 @@ a {
     height: var(--navbar-height);
     position: sticky;
     top: 0;
+
+    &-collapse {
+
+        &.collapsing,
+        &.show {
+            position: fixed;
+            padding: 25px;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 50%;
+            background-color: #16303f;
+        }
+    }
 }
 
 .navbar-social-media {
@@ -201,6 +220,7 @@ a {
 .icon-star {
     background-image: url("../img/icon/star.svg");
 }
+
 .icon-star.deactive {
     background-image: url("../img/icon/star-gray.svg");
 }
@@ -275,6 +295,7 @@ a {
 .global-logistics-wrapper {
     background-color: #ffffff;
     position: relative;
+
     &-images {
         position: relative;
     }
@@ -282,6 +303,7 @@ a {
     .image-one {
         width: 100%;
     }
+
     .image-two {
         display: block;
         position: absolute;
@@ -328,6 +350,7 @@ a {
         top: 180px;
         height: 300px;
     }
+
     @media only screen and (min-width: 1400px) {
         top: 160px;
         height: 400px;
@@ -348,6 +371,7 @@ a {
 .comments-button-prev {
     background-image: url("../img/icon/left-arrow.svg");
 }
+
 .comments-button-next {
     background-image: url("../img/icon/right-arrow.svg");
 }
@@ -359,6 +383,7 @@ a {
     height: 40px;
     transition: all 200ms;
 }
+
 .comments-button.swiper-button-disabled {
     opacity: 0.5;
 }
@@ -372,6 +397,7 @@ a {
 .fly-img-wrapper img {
     object-fit: cover;
 }
+
 .fly-img-content {
     position: absolute;
     bottom: 0%;
@@ -420,6 +446,7 @@ a {
             color: #ffffff;
             opacity: 1;
         }
+
         &::-ms-input-placeholder {
             /* Edge 12 -18 */
             color: #ffffff;
@@ -439,6 +466,7 @@ a {
             color: #ffffff;
             opacity: 1;
         }
+
         &::-ms-input-placeholder {
             /* Edge 12 -18 */
             color: #ffffff;
@@ -455,6 +483,7 @@ a {
 
 .card-brand {
     position: relative;
+
     img {
         width: 100%;
     }
@@ -469,6 +498,7 @@ a {
         width: 100%;
         height: 100%;
     }
+
     &-logo {
         z-index: 1;
         position: absolute;
@@ -487,6 +517,7 @@ a {
             height: 300px;
             object-fit: cover;
         }
+
         &-hover {
             display: flex;
             align-items: center;
@@ -501,14 +532,17 @@ a {
             opacity: 0;
             visibility: hidden;
         }
+
         &:hover .blog-image-hover {
             transition: all 200ms;
             opacity: 1;
             visibility: visible;
         }
     }
+
     .blog-title {
         color: #000;
+
         &:hover {
             color: #ffb629;
         }
@@ -530,6 +564,7 @@ a {
         width: 100%;
     }
 }
+
 .more-blog-btn {
     color: #ffffff;
     font-size: 16px;
@@ -573,6 +608,7 @@ a {
     &-center {
         &-menu {
             padding-left: 15px;
+
             ul {
                 list-style: none;
                 padding: 0;
@@ -580,15 +616,18 @@ a {
 
             li {
                 padding: 10px 5px;
+
                 &:hover {
                     padding-left: 15px;
                     transition: all 100ms;
                 }
             }
+
             a {
                 color: #ffffff;
             }
         }
+
         &-form {
             & input {
                 padding: 16px;
@@ -604,6 +643,7 @@ a {
             }
         }
     }
+
     &-bottom {
         &-link {
             & a {
@@ -619,6 +659,7 @@ a {
 
 .header-sc-wrapper {
     position: relative;
+
     .header-bg {
         width: 100%;
         height: 400px;
@@ -642,6 +683,7 @@ a {
     .bg-plane {
         background-image: url("../img/header/plane.jpg");
     }
+
     .bg-truck {
         background-image: url("../img/header/truck.jpg");
     }
@@ -663,11 +705,13 @@ a {
         position: relative;
         width: 100%;
         height: 100%;
+        aspect-ratio: 1/1;
 
         a {
             display: block;
             width: 100%;
             height: 100%;
+
             &::after {
                 content: "";
                 position: absolute;
@@ -684,6 +728,7 @@ a {
                 visibility: hidden;
                 transition: all 200ms;
             }
+
             &:hover::after {
                 opacity: 100%;
                 visibility: visible;
@@ -734,6 +779,7 @@ a {
                 top: 50%;
                 transition: all 200ms;
             }
+
             &-effect {
                 content: "";
                 position: absolute;
@@ -749,6 +795,7 @@ a {
                 top: 50%;
                 transition: all 600ms;
             }
+
             &:hover .thumbnail-play-effect {
                 width: 1000px;
                 height: 1000px;
@@ -766,6 +813,7 @@ a {
         display: flex;
         flex-direction: column;
     }
+
     li {
         list-style-image: url("../img/icon/arrow.svg");
     }
@@ -774,6 +822,7 @@ a {
 .project-details {
     .project-details-content-info {
         font-size: 20px;
+
         .subject {
             display: inline-block;
             width: 100px;
@@ -784,4 +833,33 @@ a {
 
 .f-panzoom {
     background-color: transparent;
+}
+
+.bg-multi {
+    /* Rectangle 69 */
+    height: 60dvh;
+
+    background: url("../img/multibg/ship.png"), url("../img/multibg/truck.png"), url("../img/multibg/containers.png"), radial-gradient(50% 50% at 50% 50%, #175497 0%, #5ba9f6 100%);
+    background-repeat: no-repeat;
+    background-position: top 5px left 5px, right 5px bottom 5px, center, center;
+
+    background-size: 20dvh,20dvh,60dvh,100%;
+    @media (min-width: 576px) {
+        background-size: 30dvh,30dvh,70dvh,100%;
+        background-position: top 10px left 10px, right 10px bottom 10px, center, center;
+
+    }
+    @media (min-width: 768px) {
+        background-size: 35dvh,35dvh,80dvh,100%;
+        background-position: top 20px left 20px, right 20px bottom 20px, center, center;
+
+    }
+    @media (min-width: 992px) {
+        
+        background-size: 40dvh,40dvh,90dvh,100%;
+        background-position: top 30px left 30px, right 30px bottom 30px, center, center;
+
+    }
+
+
 }

@@ -81,19 +81,17 @@
             <div class="collapse navbar-collapse h-100" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Project</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link disabled" href="#">Contact</a>
                     </li>
                 </ul>
                 <span class="navbar-end">
@@ -111,7 +109,7 @@
                             <i class="icon icon-linkedin"></i>
                         </a>
                     </div>
-                    <a href="" class="quick-navbar-button">Request Quote</a>
+                    <a href="" class="quick-navbar-button d-none d-lg-flex">Request Quote</a>
                 </span>
 
             </div>
@@ -137,52 +135,69 @@
         </div>
     </section>
 
+
+
+    <section class="d-none">
+        <div class="container bg-multi">
+
+        </div>
+    </section>
+
+
+
     <section>
         <div class="img-gallery">
             <div class="container py-5 my-5">
                 <div class="row gy-4">
-                    <div class="col-4">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <div class="img-gallery-image-wrapper">
                             <a href="assets/img/gallery/Photo-1.jpg" data-fancybox="gallery">
-                                <img src="assets/img/gallery/Photo-1.jpg" class="img-gallery-photo" alt="">
+                                <img src="assets/img/gallery/lazyload.jpg" data-src="assets/img/gallery/Photo-1.jpg" class="lazyload img-gallery-photo" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="img-gallery-image-wrapper">
-                            <a href="assets/img/gallery/Photo-3.jpg" data-fancybox="gallery">
-                                <img src="assets/img/gallery/Photo-3.jpg" class="img-gallery-photo" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="img-gallery-image-wrapper">
-                            <a href="assets/img/gallery/Photo-4.jpg" data-fancybox="gallery">
-                                <img src="assets/img/gallery/Photo-4.jpg" class="img-gallery-photo" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="img-gallery-image-wrapper">
-                            <a href="assets/img/background/bg-footer.jpg" data-fancybox="gallery">
-                                <img src="assets/img/background/bg-footer.jpg" class="img-gallery-photo" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="img-gallery-image-wrapper">
-                            <a href="assets/img/background/bg-section-global-logistics.jpg" data-fancybox="gallery">
-                                <img src="assets/img/background/bg-section-global-logistics.jpg" class="img-gallery-photo" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4">
+
+                    <div class="col-12 col-md-6 col-lg-4">
                         <div class="img-gallery-image-wrapper">
                             <a href="assets/img/gallery/Photo-2.jpg" data-fancybox="gallery">
-                                <img src="assets/img/gallery/Photo-2.jpg" class="img-gallery-photo" alt="">
+                                <img src="assets/img/gallery/lazyload.jpg" data-src="assets/img/gallery/Photo-2.jpg" class="lazyload img-gallery-photo" alt="">
                             </a>
                         </div>
                     </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="img-gallery-image-wrapper">
+                            <a href="assets/img/gallery/Photo-3.jpg" data-fancybox="gallery">
+                                <img src="assets/img/gallery/lazyload.jpg" data-src="assets/img/gallery/Photo-3.jpg" class="lazyload img-gallery-photo" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="img-gallery-image-wrapper">
+                            <a href="assets/img/gallery/Photo-4.jpg" data-fancybox="gallery">
+                                <img src="assets/img/gallery/lazyload.jpg" data-src="assets/img/gallery/Photo-4.jpg" class="lazyload img-gallery-photo" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="img-gallery-image-wrapper">
+                            <a href="assets/img/gallery/photo-5.jpg" data-fancybox="gallery">
+                                <img src="assets/img/gallery/lazyload.jpg" data-src="assets/img/gallery/photo-5.jpg" class="lazyload img-gallery-photo" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="img-gallery-image-wrapper">
+                            <a href="assets/img/gallery/photo-6.jpg" data-fancybox="gallery">
+                                <img src="assets/img/gallery/lazyload.jpg" data-src="assets/img/gallery/photo-6.jpg" class="lazyload img-gallery-photo" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
                 </div>
             </div>
         </div>
@@ -190,8 +205,8 @@
 
     <section>
         <div class="row g-0">
-            <div class="col-12 col-md-3">
-                <div class="d-flex gap-3 p-4 align-items-center border-top border justify-content-end">
+            <div class="col-12 col-lg-3">
+                <div class="d-flex gap-3 p-4 align-items-center border-top border justify-content-center justify-content-lg-end">
                     <span class="fs-2 fw-bolder">
                         24
                     </span>
@@ -199,8 +214,8 @@
                     <span>Our Location</span>
                 </div>
             </div>
-            <div class="col-12 col-md-3">
-                <div class="d-flex gap-3 p-4 align-items-center border-top border justify-content-center">
+            <div class="col-12 col-lg-3">
+                <div class="d-flex gap-3 p-4 align-items-center border-top border justify-content-center justify-content-center">
                     <span class="fs-2 fw-bolder">
                         1294
                     </span>
@@ -208,8 +223,8 @@
                     <span>Delivered Packages</span>
                 </div>
             </div>
-            <div class="col-12 col-md-3">
-                <div class="d-flex gap-3 p-4 align-items-center border-top border justify-content-center">
+            <div class="col-12 col-lg-3">
+                <div class="d-flex gap-3 p-4 align-items-center border-top border justify-content-center justify-content-center">
                     <span class="fs-2 fw-bolder">
                         3594
                     </span>
@@ -217,8 +232,8 @@
                     <span>Satisfied Clients</span>
                 </div>
             </div>
-            <div class="col-12 col-md-3">
-                <div class="d-flex gap-3 p-4 align-items-center border-top border justify-content-start">
+            <div class="col-12 col-lg-3">
+                <div class="d-flex gap-3 p-4 align-items-center border-top border justify-content-center justify-content-lg-start">
                     <span class="fs-2 fw-bolder">
                         247+
                     </span>
